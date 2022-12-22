@@ -22,7 +22,7 @@ Features:
   ```
 - Navigate to repository folder
   ```sh
-  cd tech-news-website
+  cd decoration-website
   ```
 
 
