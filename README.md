@@ -1,4 +1,4 @@
-# Tech News Website
+# Decoration Website
 
 ![preview](image-preview-decoration.png)
 
