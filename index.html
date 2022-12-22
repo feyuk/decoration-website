@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Decoration Room</title>
+  <meta name="description" content="Room homepage">
+
+  <link rel="stylesheet" href="css/app.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <nav class="header__navbar">
+      <button class="header__menu-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-expanded="false" aria-controls="menu">
+        <span class="visually-hidden">Menu</span>
+        <svg class="icon-burger" width="20" height="14" xmlns="http://www.w3.org/2000/svg" aira-hidden="true"><path d="M20 12v2H0v-2h20zm0-6v2H0V6h20zm0-6v2H0V0h20z" fill="#FFF" fill-rule="evenodd"/></svg>
+        <svg class="icon-close" width="16" height="16" xmlns="http://www.w3.org/2000/svg" aira-hidden="true"><path d="M14.364.222l1.414 1.414L9.414 8l6.364 6.364-1.414 1.414L8 9.414l-6.364 6.364-1.414-1.414L6.586 8 .222 1.636 1.636.222 8 6.586 14.364.222z" fill="#000" fill-rule="evenodd" opacity=".201"/></svg>
+      </button>
+
+      <div class="header__logo">
+        <span>
+          <img src="images/logo.svg" alt="Room" width="62" height="14">
+        </span>
+      </div>
+
+      <div class="header__collapse collapse" id="menu">
+        <ul class="header__nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <h1 class="visually-hidden">Welcome to Decoration Room</h1>
+  </header>
+
+  <main class="main">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="carousel-row">
+            <picture class="carousel-image">
+              <source srcset="images/mobile-image-hero-1.jpg" media="(max-width: 768px)">
+              <img src="images/desktop-image-hero-1.jpg" alt="" class="d-block w-100">
+            </picture>
+
+            <div class="carousel-body text-body">
+              <div class="max-w-prose mx-auto">
+                <h2>Discover innovative ways to decorate</h2>
+
+                <p>We provide unmatched quality, comfort, and style for property owners across the country. Our experts combine form and function in bringing your vision to life. Create a room in your own style with our collection and make your property a reflection of you and what you love.</p>
+
+                <p class="shop-now"><a href="#">Shop now</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="carousel-row">
+            <picture class="carousel-image">
+              <source srcset="images/mobile-image-hero-2.jpg" media="(max-width: 768px)">
+              <img src="images/desktop-image-hero-2.jpg" alt="" class="d-block w-100">
+            </picture>
+
+            <div class="carousel-body text-body">
+              <div class="max-w-prose mx-auto">
+                <h2>We are available all across the globe</h2>
+
+                <p>With stores all over the world, it's easy for you to find furniture for your home or place of business. Locally, we’re in most major cities throughout the country. Find the branch nearest you using our store locator. Any questions? Don't hesitate to contact us today.</p>
+
+                <p class="shop-now"><a href="#">Shop now</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="carousel-row">
+            <picture class="carousel-image">
+              <source srcset="images/mobile-image-hero-3.jpg" media="(max-width: 768px)">
+              <img src="images/desktop-image-hero-3.jpg" alt="" class="d-block w-100">
+            </picture>
+
+            <div class="carousel-body text-body">
+              <div class="max-w-prose mx-auto">
+                <h2>Manufactured with the best materials</h2>
+
+                <p>Our modern furniture store provide a high level of quality. Our company has invested in advanced technology to ensure that every product is made as perfect and as consistent as possible. With three decades of experience in this industry, we understand what customers want for their home and office.</p>
+
+                <p class="shop-now"><a href="#">Shop now</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <svg width="14" height="24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M13 0L1 12l12 12" stroke="#FFF" fill="none" fill-rule="evenodd"/></svg>
+        <span class="visually-hidden">Previous</span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <svg width="14" height="24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M1 0l12 12L1 24" stroke="#FFF" fill="none" fill-rule="evenodd"/></svg>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="row">
+      <div class="col-image">
+        <img src="images/image-about-dark.jpg" alt="dark chair" class="d-block w-100 h-100 object-cover">
+      </div>
+
+      <div class="col-text">
+        <div class="text-body text-body--sm">
+          <div class="max-w-prose mx-auto">
+            <h3>About our furniture</h3>
+
+            <p>Our multifunctional collection blends design and function to suit your individual taste. Make each room unique, or pick a cohesive theme that best express your interests and what inspires you. Find the furniture pieces you need, from traditional to contemporary styles or anything in between. Product specialists are available to help you create your dream space.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-image">
+        <img src="images/image-about-light.jpg" alt="light chair" class="d-block w-100 h-100 object-cover">
+      </div>
+    </div>
+  </main>
+
+  <footer class="attribution">
+      All Rights Reserved - 2022
+  </footer>
+
+  <button class="header__menu-overlay" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-expanded="false" aria-controls="menu">
+    <span class="visually-hidden">Menu close</span>
+  </button>
+</body>
+</html>

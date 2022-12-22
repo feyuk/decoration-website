@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600&display=swap');
+
+body {
+    font-family: $font-family-base;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.65;
+    background-size: cover;
+    color: $black;
+    background-color: $light;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 375px;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+h1, h2, h3 {
+    line-height: 1.1;
+    margin: 0 0 1rem;
+}
+
+h2 {
+    font-size: 2.125rem;
+    line-height: 0.9;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 0.9375rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.35em;
+    margin-bottom: 0.75rem;
+}
+
+p {
+    margin: 0 0 1rem;
+    color: $dark-gray;
+}
+
+.text-body {
+    line-height: 1.2;
+    padding: 4rem 2rem 3rem;
+    min-height: 410px;
+    display: flex;
+    align-items: center;
+}
+
+.text-body--sm {
+    padding-top: 3.75rem;
+    padding-bottom: 2.75rem;
+    min-height: 305px;
+}
+
+.max-w-prose {
+    max-width: 65ch;
+}
+
+.object-cover {
+    object-fit: cover;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    display: none;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.col-image img {
+    max-height: 305px;
+}
+
+@include media-breakpoint-up(lg) {
+    .main {
+        min-height: 800px;
+    }
+
+    .row {
+        display: flex;
+        min-height: 16.62rem;
+    }
+
+    .col-image img {
+        max-height: none;
+    }
+
+    .col-text {
+        flex: 1 0 40.2777%;
+        max-width: 40.2777%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem 2rem 1rem 2.75rem;
+    }
+
+    .col-image:first-child {
+        flex: 1 0 29.1666%;
+        max-width: 29.1666%;
+    }
+
+    .col-image:last-child {
+        flex: 1;
+    }
+
+    .text-body--sm {
+        padding: 0;
+        min-height: 0;
+    }
+}
